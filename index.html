@@ -1,253 +1,167 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SmileSchool - Learn to Smile</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;0,900;1,400&family=Coiny&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Frédéric Bourouliou — learning tools and stubborn software</title>
+  <meta name="description" content="Catalogue of things Frédéric Bourouliou built: 3D/AR training modules, an invoicing app in COBOL, web apps and tools. Live demos and source code.">
+  <meta name="color-scheme" content="light dark">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='4' fill='%23a8432a'/%3E%3Ctext x='16' y='23' font-family='Georgia,serif' font-size='20' text-anchor='middle' fill='%23f7f1ea'%3EF%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gloock&family=Hanken+Grotesk:ital,wght@0,400;0,500;0,600;1,400&display=swap">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="logo">
-                <a href="#">
-                    <img src="smile_on.png" alt="SmileSchool Logo">
-                    <span>SmileSchool</span>
-                </a>
-            </div>
-            <nav>
-                <a href="#">COURSES</a>
-                <a href="#">PRICING</a>
-                <a href="#">LOGIN</a>
-            </nav>
+  <a class="skip" href="#catalogue">Skip to the catalogue</a>
+
+  <header class="masthead">
+    <p class="masthead__name">Frédéric Bourouliou</p>
+    <nav aria-label="Main">
+      <a href="#catalogue">Catalogue</a>
+      <a href="#contact">Contact</a>
+      <a href="https://github.com/FredBourouliou">GitHub</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="intro" aria-labelledby="intro-title">
+      <h1 id="intro-title">I build learning tools and stubborn software.</h1>
+      <p class="intro__lede">Literature teacher for nineteen years, now instructional engineer and developer in Dijon, France. What follows is a catalogue of things I made. Each one can be opened, run or read.</p>
+    </section>
+
+    <section id="catalogue" class="catalogue" aria-labelledby="catalogue-title">
+      <h2 id="catalogue-title" class="section-label">Catalogue</h2>
+
+      <article class="entry entry--feature" style="--i:0">
+        <p class="entry__no" aria-hidden="true">01</p>
+        <div class="entry__text">
+          <h3>Le Cobol</h3>
+          <p>An invoicing web app for French freelancers, written in COBOL. Exact decimal arithmetic, one compiled binary per endpoint behind Apache CGI, PDFs drawn in hand-written PostScript, an HTMX interface. Runs with a single <code>docker run</code>.</p>
+          <p class="entry__meta">GnuCOBOL · PostScript · HTMX · Apache CGI · ISAM</p>
+          <ul class="entry__links">
+            <li><a href="https://github.com/FredBourouliou/le-cobol">Read the source</a></li>
+          </ul>
         </div>
-    </header>
-    
-    <main>
-        <section class="hero-section">
-            <div class="hero-content">
-                <h1>Get schooled</h1>
-                <p class="tagline">SMILES GRIN LAUGH</p>
-                <button>REGISTER FOR FREE</button>
-            </div>
-            <div class="pros-section">
-                <h2><span>Learn</span> from the pros</h2>
-                <div>
-                    <div class="pro-card">
-                        <img src="profile_1.jpg" alt="Phillip Massey">
-                        <h3>Phillip Massey</h3>
-                        <p>« Smile of the year »<br>2018 - 2019</p>
-                    </div>
-                    <div class="pro-card">
-                        <img src="profile_2.jpg" alt="Nannie Lawrence">
-                        <h3>Nannie Lawrence</h3>
-                        <p>Best « little smile »<br>2017</p>
-                    </div>
-                    <div class="pro-card">
-                        <img src="profile_3.jpg" alt="Bruce Walters">
-                        <h3>Bruce Walters</h3>
-                        <p>Best « Friend Smile »<br>live performance 2019</p>
-                    </div>
-                    <div class="pro-card">
-                        <img src="profile_4.jpg" alt="Henry Hughes">
-                        <h3>Henry Hughes</h3>
-                        <p>« 24h smiles » winner<br>2016 - 2019</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <section class="quotes-section">
-            <div>
-                <img src="profile_5.jpg" alt="Person Name">
-                <div>
-                    <blockquote>« Those tutorials are concise and go straight to the point. I can't think of a better place to learn smiling. And it's so fun!</blockquote>
-                    <p class="author-name">Person Name</p>
-                    <p class="author-title">weather presenter</p>
-                </div>
-            </div>
-        </section>
-        
-        <section class="videos-section">
-            <h1>Most <span>popular</span> tutorials</h1>
-            <div class="videos-container">
-                <div class="video-card">
-                    <div class="video-thumbnail">
-                        <img src="thumbnail_4.jpg" alt="Diagonal Smile">
-                        <div class="play-button"></div>
-                    </div>
-                    <div class="video-content">
-                        <h2>Diagonal Smile</h2>
-                        <p>Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
-                        <div class="author-info">
-                            <img src="profile_1.jpg" alt="Phillip Massey">
-                            <h3>Phillip Massey</h3>
-                        </div>
-                        <div class="rating-info">
-                            <div class="stars">
-                                <img src="star_on.png" alt="Star">
-                                <img src="star_on.png" alt="Star">
-                                <img src="star_on.png" alt="Star">
-                                <img src="star_on.png" alt="Star">
-                                <img src="star_off.png" alt="Star">
-                            </div>
-                            <p>8 min</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="video-card">
-                    <div class="video-thumbnail">
-                        <img src="thumbnail_3.jpg" alt="Sad Smile">
-                        <div class="play-button"></div>
-                    </div>
-                    <div class="video-content">
-                        <h2>Sad Smile</h2>
-                        <p>Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
-                        <div class="author-info">
-                            <img src="profile_1.jpg" alt="Phillip Massey">
-                            <h3>Phillip Massey</h3>
-                        </div>
-                        <div class="rating-info">
-                            <div class="stars">
-                                <img src="star_on.png" alt="Star">
-                                <img src="star_on.png" alt="Star">
-                                <img src="star_on.png" alt="Star">
-                                <img src="star_on.png" alt="Star">
-                                <img src="star_off.png" alt="Star">
-                            </div>
-                            <p>8 min</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="video-card">
-                    <div class="video-thumbnail">
-                        <img src="thumbnail_1.jpg" alt="Natural Smile">
-                        <div class="play-button"></div>
-                    </div>
-                    <div class="video-content">
-                        <h2>Natural Smile</h2>
-                        <p>Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
-                        <div class="author-info">
-                            <img src="profile_1.jpg" alt="Phillip Massey">
-                            <h3>Phillip Massey</h3>
-                        </div>
-                        <div class="rating-info">
-                            <div class="stars">
-                                <img src="star_on.png" alt="Star">
-                                <img src="star_on.png" alt="Star">
-                                <img src="star_on.png" alt="Star">
-                                <img src="star_on.png" alt="Star">
-                                <img src="star_off.png" alt="Star">
-                            </div>
-                            <p>8 min</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="video-card">
-                    <div class="video-thumbnail">
-                        <img src="thumbnail_2.jpg" alt="Happy Smile">
-                        <div class="play-button"></div>
-                    </div>
-                    <div class="video-content">
-                        <h2>Happy Smile</h2>
-                        <p>Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
-                        <div class="author-info">
-                            <img src="profile_1.jpg" alt="Phillip Massey">
-                            <h3>Phillip Massey</h3>
-                        </div>
-                        <div class="rating-info">
-                            <div class="stars">
-                                <img src="star_on.png" alt="Star">
-                                <img src="star_on.png" alt="Star">
-                                <img src="star_on.png" alt="Star">
-                                <img src="star_on.png" alt="Star">
-                                <img src="star_off.png" alt="Star">
-                            </div>
-                            <p>8 min</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <section class="membership-section">
-            <h1><span>Free</span> membership</h1>
-            <div class="membership-benefits">
-                <div class="benefit-item">
-                    <div class="smile-icon">
-                        <img src="smile_on.png" alt="Smile Icon">
-                    </div>
-                    <h2>Lorem ipsum</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-                <div class="benefit-item">
-                    <div class="smile-icon">
-                        <img src="smile_on.png" alt="Smile Icon">
-                    </div>
-                    <h2>Lorem ipsum</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-                <div class="benefit-item">
-                    <div class="smile-icon">
-                        <img src="smile_on.png" alt="Smile Icon">
-                    </div>
-                    <h2>Lorem ipsum</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-                <div class="benefit-item">
-                    <div class="smile-icon">
-                        <img src="smile_on.png" alt="Smile Icon">
-                    </div>
-                    <h2>Lorem ipsum</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-            </div>
-            <button class="register-button">REGISTER FOR FREE</button>
-        </section>
-        
-        <section class="faq-section">
-            <h1>F.A.Q.</h1>
-            <div>
-                <div>
-                    <div>
-                        <h2>How does this work?</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-                    </div>
-                    <div>
-                        <h2>How does this work?</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-                    </div>
-                </div>
-                <div>
-                    <div>
-                        <h2>How does this work?</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-                    </div>
-                    <div>
-                        <h2>How does this work?</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-    
-    <footer>
-        <div>
-            <div>
-                <div class="logo">
-                    <img src="smile_on.png" alt="SmileSchool Logo">
-                    <span>SmileSchool</span>
-                </div>
-                <div class="social-icons">
-                    <a href="#"><img src="facebook.svg" alt="Facebook"></a>
-                    <a href="#"><img src="twitter.svg" alt="Twitter"></a>
-                    <a href="#"><img src="instagram.svg" alt="Instagram"></a>
-                </div>
-            </div>
-            <p>©smileschool 2020</p>
+        <figure class="entry__media entry__media--pair">
+          <img src="img/le-cobol.webp" width="1200" height="839" alt="Invoice list in Le Cobol's terminal-style interface, with paid, overdue and draft statuses">
+          <img src="img/le-cobol-pdf.webp" width="700" height="990" alt="Invoice PDF generated from PostScript" loading="lazy">
+        </figure>
+      </article>
+
+      <article class="entry entry--feature entry--flip" style="--i:1">
+        <p class="entry__no" aria-hidden="true">02</p>
+        <div class="entry__text">
+          <h3>Hemi V8 — 3D &amp; AR inspection</h3>
+          <p>A training module to explore a supercharged engine before touching the real one in the workshop: five guided phases, disassembly states exported from Blender, augmented reality on a phone. Nothing to install.</p>
+          <p class="entry__meta">model-viewer · WebXR · Blender · vanilla JS</p>
+          <ul class="entry__links">
+            <li><a href="https://fredbourouliou.github.io/hemi-engine-ar/">Open the demo</a></li>
+            <li><a href="https://github.com/FredBourouliou/hemi-engine-ar">Read the source</a></li>
+          </ul>
         </div>
-    </footer>
+        <figure class="entry__media">
+          <img src="img/hemi.webp" width="1400" height="968" alt="Hemi V8 engine in the 3D inspection module, with phase tabs and hotspots" loading="lazy">
+        </figure>
+      </article>
+
+      <div class="entries">
+        <article class="entry" style="--i:2">
+          <p class="entry__no" aria-hidden="true">03</p>
+          <div class="entry__text">
+            <h3>Engine exploration</h3>
+            <p>The same engine as a step-by-step procedure: each step removes a part and comes with an instruction, an objective and hotspots.</p>
+            <ul class="entry__links">
+              <li><a href="https://fredbourouliou.github.io/exploration-3d-moteur/">Open the demo</a></li>
+              <li><a href="https://github.com/FredBourouliou/exploration-3d-moteur">Source</a></li>
+            </ul>
+          </div>
+          <figure class="entry__media"><img src="img/exploration.webp" width="1200" height="873" alt="Step two of the engine procedure: cover removed, instruction panel below" loading="lazy"></figure>
+        </article>
+
+        <article class="entry" style="--i:3">
+          <p class="entry__no" aria-hidden="true">04</p>
+          <div class="entry__text">
+            <h3>Booky</h3>
+            <p>A reading companion for iOS: scan a printed page, listen to it, discuss it with an AI tutor, or read a classic from Project Gutenberg.</p>
+            <ul class="entry__links">
+              <li><a href="https://github.com/FredBourouliou/Booky-Portfolio">Source</a></li>
+              <li><a href="https://github.com/FredBourouliou/booky-api-public">Text-to-speech backend</a></li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="entry" style="--i:4">
+          <p class="entry__no" aria-hidden="true">05</p>
+          <div class="entry__text">
+            <h3>Pokédex</h3>
+            <p>All 1,025 Pokémon from PokéAPI: browse by region, filter by type, compare stats, estimate damage.</p>
+            <ul class="entry__links">
+              <li><a href="https://fredbourouliou.github.io/interactive-pokedex/">Open the demo</a></li>
+              <li><a href="https://github.com/FredBourouliou/interactive-pokedex">Source</a></li>
+            </ul>
+          </div>
+          <figure class="entry__media"><img src="img/pokedex.webp" width="1200" height="806" alt="Pokédex list with search, type filter and region selector" loading="lazy"></figure>
+        </article>
+
+        <article class="entry" style="--i:5">
+          <p class="entry__no" aria-hidden="true">06</p>
+          <div class="entry__text">
+            <h3>Calculator</h3>
+            <p>Basic, scientific and programmer modes, with exact hexadecimal, binary and octal arithmetic, in plain HTML, CSS and JavaScript.</p>
+            <ul class="entry__links">
+              <li><a href="https://fredbourouliou.github.io/cyber_calculette/">Open the demo</a></li>
+              <li><a href="https://github.com/FredBourouliou/cyber_calculette">Source</a></li>
+            </ul>
+          </div>
+          <figure class="entry__media"><img src="img/calculator.webp" width="1200" height="848" alt="Calculator in its cyberpunk theme with the history panel open" loading="lazy"></figure>
+        </article>
+
+        <article class="entry" style="--i:6">
+          <p class="entry__no" aria-hidden="true">07</p>
+          <div class="entry__text">
+            <h3>Training course search</h3>
+            <p>Search vocational training offers on a map: a Symfony 7 API and a React + Leaflet front end, with Docker and CI.</p>
+            <ul class="entry__links">
+              <li><a href="https://github.com/FredBourouliou/formation-search-portal">Source</a></li>
+            </ul>
+          </div>
+          <figure class="entry__media"><img src="img/formation.webp" width="1200" height="772" alt="Training course search results next to a map of Bourgogne-Franche-Comté" loading="lazy"></figure>
+        </article>
+
+        <article class="entry" style="--i:7">
+          <p class="entry__no" aria-hidden="true">08</p>
+          <div class="entry__text">
+            <h3>Cadastral ETL</h3>
+            <p>Shapefiles into PostgreSQL/PostGIS with GeoPandas, then spatial queries, shown here with synthetic parcels inside real commune boundaries.</p>
+            <ul class="entry__links">
+              <li><a href="https://github.com/FredBourouliou/geo-demo">Source</a></li>
+            </ul>
+          </div>
+          <figure class="entry__media entry__media--small"><img src="img/geo.webp" width="800" height="791" alt="Map of five communes near Dijon with synthetic parcels" loading="lazy"></figure>
+        </article>
+      </div>
+
+      <div class="also">
+        <h2 class="section-label">Also</h2>
+        <ul>
+          <li><a href="https://github.com/FredBourouliou/mini-soc-ioc-lab">Mini SOC IOC Lab</a>: scan files and logs against indicators of compromise and YARA rules.</li>
+          <li><a href="https://github.com/FredBourouliou/notion-automation-examples">Notion automation</a>: build a Notion workspace through its API.</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact" class="colophon">
+    <h2 class="section-label">Contact</h2>
+    <p class="colophon__lead">Happy to talk about training design, 3D on the web, or why anyone would write COBOL in 2026.</p>
+    <ul class="colophon__links">
+      <li><a href="mailto:bourouliou@gmail.com">Email</a></li>
+      <li><a href="https://www.linkedin.com/in/frederic-bourouliou/">LinkedIn</a></li>
+      <li><a href="https://github.com/FredBourouliou">GitHub</a></li>
+      <li><a href="https://x.com/FBourouliou">X</a></li>
+    </ul>
+    <p class="colophon__note">Set in Gloock and Hanken Grotesk. One HTML file, one stylesheet, no tracking.</p>
+  </footer>
 </body>
 </html>
